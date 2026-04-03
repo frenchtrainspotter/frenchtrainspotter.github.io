@@ -4,3 +4,12 @@ title: WIP
 ---
 <h1>Work in progress</h1>
 This site is still a work-in-progress, that’s why it looks so barebones and only has one page. If you come back later, you might see content and/or better styles.
+
+<h2>Latest posts</h2>
+{% for post in site.posts %}
+    <div class="post-card">
+        <small class="post-date">{{ post.date | date: "%Y-%m-%d" }}</small>
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        {{ post.excerpt }}
+    </div>
+{% endfor %}
