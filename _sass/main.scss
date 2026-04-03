@@ -1,7 +1,14 @@
+/* Font, color scheme */
 body {
     font-family: sans-serif;
+    color: #ffffff;
+    background-color: #0b0b0b
+}
+a:link, a:visited, a:hover, a:active {
+    color: #0fbf91
 }
 
+/* Content size */
 .content {
     max-width: 800px;
     margin-left: auto;
