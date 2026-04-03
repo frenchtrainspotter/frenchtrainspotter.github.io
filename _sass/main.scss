@@ -14,3 +14,11 @@ a:link, a:visited, a:hover, a:active {
     margin-left: auto;
     margin-right: auto
 }
+
+/* Navigation */
+nav a {
+    text-decoration-line: none
+}
+nav .current-page {
+    text-decoration-line: underline
+}
