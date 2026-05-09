@@ -1,6 +1,6 @@
 - name: Home
   link: /
-- name: About me
+- name: About
   link: /about.html
 - name: GitHub profile
   link: https://github.com/frenchtrainspotter
