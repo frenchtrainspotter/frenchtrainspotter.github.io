@@ -1,11 +1,17 @@
+/* Variables */
+:root {
+    --foreground-color-2: #0fbf91;
+}
+
 /* Font, color scheme */
 body {
-    font-family: sans-serif;
+    /* I should add more fonts for different OSes in the future */
+    font-family: "Adwaita Sans", Ubuntu, sans-serif;
     color: #ffffff;
     background-color: #0b0b0b;
 }
 a:link, a:visited, a:hover, a:active {
-    color: #0fbf91;
+    color: var(--foreground-color-2);
 }
 
 /* Content size */
@@ -39,3 +45,26 @@ nav ul li a.current-page {
     background-color: #0ca77d;
 }
 
+/* Main page */
+/* @media screen is probably a terrible solution for my problem but atp I spend like 3 hours trying to do it */
+@media screen and (width >= 800px) {
+    .latest-posts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.post-card {
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--foreground-color-2);
+    border-radius: 10px;
+    padding: 20px;
+    height: fit-content;
+    margin: 20px;
+}
+.post-card h3 {
+    margin-top: 0;
+}
+.post-card p {
+    margin-bottom: 0;
+}
