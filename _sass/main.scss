@@ -14,21 +14,13 @@ a:link, a:visited, a:hover, a:active {
     color: var(--foreground-color-2);
 }
 
-/* Content size */
-body {
-    margin: 0;
-}
-.main-content {
-    margin-left: 8px;
-    margin-right: 8px;
-}
-
-/* Navigation/header */
+/* Navigation */
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     background-color: #ffffff0c;
+    border-radius: 10px;
     display: flex;
 }
 nav ul li a {
@@ -39,10 +31,12 @@ nav ul li a {
 }
 nav ul li a:hover {
     background-color: #0b0b0b;
+    border-radius: 10px;
 }
 nav ul li a.current-page {
     color: #ffffff;
     background-color: #0ca77d;
+    border-radius: 10px;
 }
 
 /* Main page */
